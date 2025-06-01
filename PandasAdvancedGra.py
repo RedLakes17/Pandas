@@ -14,13 +14,13 @@ Perros["Comida_por_semana"]=[4,1,2,2,5,3,4]
 
 #Histograma
 Perros["Altura_cm"].hist()
-plt.savefig("HistogramaAdvancedPdPlt.png")
-plt.clf()
+plt.show()
+
 
 #Grafico de sliced dataframes
 avg_weight_by_breed=Perros.groupby("Raza")["Peso_kg"].mean()
 avg_weight_by_breed.plot(kind="bar", title="Peso medio de cada raza")
-plt.savefig("AdvecedGraficaRazaPeso.png")
+plt.show()
 
 
 

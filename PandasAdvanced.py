@@ -71,7 +71,7 @@ print("Promedio del peso de perros del mismo color:",Perros.groupby("Color")["Pe
 Perros.groupby("Color")["Altura_cm"].agg([max, min, sum])
 
 #Cual es el dobermann cafe mas pesado?
-Perros.groupby(["Color","Raza"])["Peso_kg","Nombre"].max()
+print(Perros.groupby(["Color","Raza"])[["Peso_kg","Nombre"]].max())
 
 
 

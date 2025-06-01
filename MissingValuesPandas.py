@@ -11,7 +11,7 @@ Perros["Comida_por_semana"]=[4,1,2,2,5,3,4]
 
 
 #Para detectar si hay valores faltante
-Perros.isna() #Para cada dato
+print(Perros.isna()) #Para cada dato
 print(Perros.isna().sum()) #Para cada columna
 
 #Para graficar los valores faltantes
